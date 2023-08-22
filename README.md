@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/majaton44/product-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution](https://github.com/majaton44/product-preview-card-component)
+- [Live version](https://rainbow-product-preview-card.netlify.app/)
 
 ## My process
 
