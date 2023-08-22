@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styling */
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  padding: 2rem;
+
+  /* Center the Content */
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Styles*/
+.card {
+  max-width: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* margin: auto auto; */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  display: grid;
+  gap: 2rem;
+  padding: 3.2rem;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.card-heading {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.card-text {
+  line-height: 1.7;
+}
+
+.prices {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.price-big {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.price-small {
+  text-decoration: line-through;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  border: none;
+  border-radius: 8px;
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  font-weight: 700;
+
+  padding: 1.4rem 2.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsl(158, 36%, 20%);
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-content {
+    padding: 2rem;
+  }
+}
